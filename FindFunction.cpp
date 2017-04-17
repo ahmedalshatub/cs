@@ -28,6 +28,9 @@ for(;x1<s1.length();x1++){
 		               	co++;
 		                x2++;
 		               }   }
+	
+if(co==s2.length())
+	break;
 }
 if(co==s2.length())
 cout<<"it exisit in position\t"<<pos;
