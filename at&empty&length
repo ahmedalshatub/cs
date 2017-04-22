@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
-void EmptyFunction(string s1)
-
+void EmptyFunction(string s1);
+void AtFunction(string s1);
 
 int main() {
 string s1;
