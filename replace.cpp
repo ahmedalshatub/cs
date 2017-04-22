@@ -29,13 +29,12 @@ for(i=pos;i<pos+n;i++ ){
 int  j=pos+n;
 
 
-for(;i<a2.length();i++){
-if(j<a2.length()){
+for(;j<a2.length();j++){
+
 	a2[i]=a2[j];
-	j++;
-}
-else
-	break;
+	i++;
+
+
 }
 a2[i]='\0';
 
