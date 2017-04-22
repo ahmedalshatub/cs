@@ -1,6 +1,6 @@
 
 
-//Ahmed Abdulrahman  write this
+//Abdulrahman Ahmed  write this
 #include <iostream>
 #include <string>
 using namespace std;
