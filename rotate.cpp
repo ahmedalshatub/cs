@@ -8,6 +8,9 @@ void rotate(int arr[5], int i) {
 			arr[i] = arr[i - 1];
 		
 		arr[i] = 0;
+		for ( i = 0; i < 5; ++i) {
+	cout<<arr[i]<<" ";
+}
 	}
 }
 
