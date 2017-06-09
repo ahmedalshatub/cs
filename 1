@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	cout<<"enter the size of array";
+	cin>>n;
+	int arr[n][n];
+	int i,j;
+	for (i = 0; i < n; ++i)
+		for (j = 0; j < n; ++j)
+			cin>>arr[i][j];
+
+
+	for (i = 0; i < n; ++i){
+			for (j = 0; j < n; ++j)
+
+				cout<<arr[i][j]<<" ";
+				cout<<endl;
+			}
+	int max=arr[0][0];
+
+	int max_pos=0;
+	//لايجاد موقع اكبر قيمة بالقطر الرئيسي
+	for (i = 0; i < n; ++i)
+			 if (arr[i][i]>max) {
+				max=arr[i][i];
+				max_pos=i;
+			}
+	//لايجاد موقع اصغر عنصر بالقطر الثانوي
+	int min=arr[0][n-1],min_pos=0;
+	for (i = 0; i < n; ++i)
+			for (j = 0; j < n; ++j)
+	if (i+j==n-1&&arr[i][j]<min) {
+		min=arr[i][j];
+		min_pos=i;
+	}
+
+arr[max_pos][max_pos]=min;
+arr[min_pos][n-1-min_pos]=max;
+cout<<endl;
+for (i = 0; i < n; ++i){
+		for (j = 0; j < n; ++j)
+
+			cout<<arr[i][j]<<" ";
+			cout<<endl;
+		}
+	return 0;
+}
